@@ -2,6 +2,8 @@
 
 #### 建立k8s群集
 * `sudo snap install microk8s --channel=1.19/stable --classic`
+#### 選擇關閉預設的HA功能(因為rancher無法兼容)
+* `microk8s disable ha-cluster`
 #### 選擇啟動所需的k8s功能
 * `microk8s enable dns ingress rbac helm3 metrics-server storage`
 #### 安裝cert-manager

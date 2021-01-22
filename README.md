@@ -14,6 +14,7 @@
 * `sudo chmod -R 777 /var/iiidevopsNFS`
 * 修改`/etc/exports`添加`/var/iiidevopsNFS *(no_root_squash,rw,sync,no_subtree_check)`
 * `sudo systemctl restart nfs-kernel-server`
+* `showmount -e 10.20.0.68`
 
 #### 安裝cert-manager
 * `microk8s.kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.4/cert-manager.crds.yaml`
